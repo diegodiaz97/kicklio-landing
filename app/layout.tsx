@@ -15,6 +15,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kicklio - Innovative Mobile App",
   description: "Discover Kicklio, the ultimate mobile app built with KMM for seamless cross-platform experience.",
+  icons: [
+    {
+      rel: "icon",
+      url: "/kicklio-transparent-icon.png?v=4",
+      sizes: "512x512",
+      type: "image/png",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/kicklio-transparent-icon.png?v=4",
+      sizes: "512x512",
+    },
+  ],
 };
 
 export default function RootLayout({
