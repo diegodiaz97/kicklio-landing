@@ -13,19 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kicklio - Innovative Mobile App",
-  description: "Discover Kicklio, the ultimate mobile app built with KMM for seamless cross-platform experience.",
+  title: "kicklio - Innovative Mobile App",
+  description: "Discover kicklio, the ultimate mobile app built with KMM for seamless cross-platform experience.",
   icons: [
     {
       rel: "icon",
-      url: "/kicklio-transparent-icon.png?v=4",
-      sizes: "512x512",
-      type: "image/png",
+      url: "/kicklio-logomark.svg?v=3",
+      type: "image/svg+xml",
     },
     {
       rel: "apple-touch-icon",
-      url: "/kicklio-transparent-icon.png?v=4",
-      sizes: "512x512",
+      url: "/kicklio-logomark.svg?v=3",
+      sizes: "180x180",
     },
   ],
 };

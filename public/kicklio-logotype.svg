@@ -1,0 +1,13 @@
+<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <text x="50%" y="55%" 
+        text-anchor="middle" 
+        dominant-baseline="middle"
+        font-family="Inter, Arial, sans-serif" 
+        font-size="90" 
+        font-weight="700" 
+        fill="#8a3044">
+    kicklio
+  </text>
+
+  <circle cx="454" cy="122" r="8" fill="#327281"/>
+</svg>

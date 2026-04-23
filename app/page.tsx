@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { KicklioIcon } from './components/KicklioIcon';
 
 type LangCode = 'es' | 'en' | 'pt' | 'de' | 'it' | 'fr';
 
@@ -17,7 +18,7 @@ const languageOptions: Array<{ code: LangCode; name: string; flag: string }> = [
 const translations: Record<LangCode, Record<string, string>> = {
   es: {
     heroTag: 'Gestión de equipos',
-    heroTitle: 'La app para equipos amateur de fútbol',
+    heroTitle: 'kicklio - La app para equipos amateur de fútbol',
     heroText:
       'Organiza entrenamientos, formaciones, comunicaciones y posts de Instagram para tu equipo de fútbol en una sola app.',
     ctaPrimary: 'Descargar ahora',
@@ -36,7 +37,7 @@ const translations: Record<LangCode, Record<string, string>> = {
   },
   en: {
     heroTag: 'Team management',
-    heroTitle: 'The app for amateur soccer teams',
+    heroTitle: 'kicklio - The app for amateur soccer teams',
     heroText:
       'Organize training, lineups, communication and Instagram posts for your soccer team in one app.',
     ctaPrimary: 'Download now',
@@ -55,7 +56,7 @@ const translations: Record<LangCode, Record<string, string>> = {
   },
   pt: {
     heroTag: 'Gestão de times',
-    heroTitle: 'O app para times amadores de futebol',
+    heroTitle: 'kicklio - O app para times amadores de futebol',
     heroText:
       'Organize treinos, formações, comunicação e posts do Instagram para seu time de futebol em um só app.',
     ctaPrimary: 'Baixar agora',
@@ -74,7 +75,7 @@ const translations: Record<LangCode, Record<string, string>> = {
   },
   de: {
     heroTag: 'Teamverwaltung',
-    heroTitle: 'Die App für Amateur-Fußballteams',
+    heroTitle: 'kicklio - Die App für Amateur-Fußballteams',
     heroText:
       'Organisiere Training, Aufstellungen, Kommunikation und Instagram-Posts für dein Fußballteam in einer App.',
     ctaPrimary: 'Jetzt herunterladen',
@@ -93,7 +94,7 @@ const translations: Record<LangCode, Record<string, string>> = {
   },
   it: {
     heroTag: 'Gestione squadra',
-    heroTitle: 'L’app per squadre amatoriali di calcio',
+    heroTitle: 'kicklio - L’app per squadre amatoriali di calcio',
     heroText:
       'Organizza allenamenti, formazioni, comunicazioni e post Instagram per la tua squadra di calcio in un’unica app.',
     ctaPrimary: 'Scarica ora',
@@ -112,7 +113,7 @@ const translations: Record<LangCode, Record<string, string>> = {
   },
   fr: {
     heroTag: 'Gestion d’équipe',
-    heroTitle: 'L’app pour les équipes de football amateur',
+    heroTitle: 'kicklio - L’app pour les équipes de football amateur',
     heroText:
       'Organisez entraînements, compositions, communications et posts Instagram pour votre équipe de football dans une seule app.',
     ctaPrimary: 'Télécharger maintenant',
@@ -142,11 +143,9 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
-            <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-[12px] hover:animate-glow transition-all">
-              <Image src="/kicklio-icon.png" alt="Kicklio icon" width={40} height={40} className="rounded-[12px] object-cover" />
-            </div>
+            <KicklioIcon className="h-12 w-12" />
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">Kicklio</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">kicklio</p>
               <p className="text-sm text-slate-300">Team management</p>
             </div>
           </div>
@@ -249,11 +248,9 @@ export default function Home() {
                 <div className="border-b border-white/10 p-6">
                   <div className="flex items-center justify-between gap-4">
                     <div className="flex items-center gap-3">
-                      <div className="flex h-14 w-14 items-center justify-center rounded-[12px] hover:animate-glow transition-all">
-                        <Image src="/kicklio-icon.png" alt="Kicklio icon" width={48} height={48} className="rounded-[12px] object-cover" />
-                      </div>
+                      <KicklioIcon className="h-14 w-14" />
                       <div>
-                        <p className="text-sm text-slate-400">Kicklio</p>
+                        <p className="text-sm text-slate-400">kicklio</p>
                         <p className="text-lg font-semibold text-white">App dashboard</p>
                       </div>
                     </div>
@@ -306,7 +303,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
               <div className="space-y-6">
-                <p className="text-sm uppercase tracking-[0.35em] text-[#8a3044]">Por qué Kicklio</p>
+                <p className="text-sm uppercase tracking-[0.35em] text-[#8a3044]">Por qué kicklio</p>
                 <h2 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
                   La central de gestión para equipos amateur de fútbol.
                 </h2>
@@ -375,7 +372,7 @@ export default function Home() {
                 Todo lo que tu app necesita para destacar.
               </h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                Kicklio te ayuda a gestionar entrenamientos, jugadores, resultados y contenido con una experiencia profesional.
+                kicklio te ayuda a gestionar entrenamientos, jugadores, resultados y contenido con una experiencia profesional.
               </p>
               <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <a
@@ -411,11 +408,9 @@ export default function Home() {
       <footer className="border-t border-slate-800/70 bg-slate-950 px-4 py-12 text-slate-400 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-[12px] hover:animate-glow transition-all">
-              <Image src="/kicklio-icon.png" alt="Kicklio icon" width={40} height={40} className="rounded-[12px] object-cover" />
-            </div>
+            <KicklioIcon className="h-12 w-12" />
             <div>
-              <p className="text-lg font-semibold text-white">Kicklio</p>
+              <p className="text-lg font-semibold text-white">kicklio</p>
               <p className="text-sm text-slate-500">Plataforma móvil premium</p>
             </div>
           </div>
